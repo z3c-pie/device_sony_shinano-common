@@ -87,7 +87,10 @@ on fs
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
 
     symlink /sdcard /storage/sdcard0
-
+    
+    # Start hvdcp to enable quck charge 2.0 in power off charge
+    start hvdcp
+    
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -559,3 +562,9 @@ service timekeep /system/vendor/bin/timekeep restore
     user root
     group root
     oneshot
+
+# Quick Charge    
+service hvdcp /system/vendor/bin/hvdcp
+    class core
+    user root
+    disabled
