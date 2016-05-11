@@ -394,7 +394,7 @@ service netmgrd /system/bin/netmgrd
     class late_start
     user root
     group root system wifi wakelock radio inet
-
+    
 on property:ro.radio.noril=true
     stop ril-daemon
     stop netmgrd
