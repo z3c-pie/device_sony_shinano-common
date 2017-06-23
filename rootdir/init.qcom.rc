@@ -75,15 +75,12 @@ on init
     setprop persist.sys.wfd.virtual 0
 
 on fs
-    mount_all ./fstab.qcom
+    mount_all fstab.qcom
     mkdir /lta-label 0555 system system
     wait /dev/block/platform/msm_sdcc.1/by-name/LTALabel
     mount ext4 /dev/block/platform/msm_sdcc.1/by-name/LTALabel /lta-label nosuid nodev noatime noexec ro barrier=0
     chown system system /lta-label
     chmod 0555 /lta-label
-
-    # Mount ZRAM
-    swapon_all fstab.qcom
 
     # Adaptive LMK
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
@@ -401,6 +398,10 @@ on post-fs-data
 on property:bluetooth.isEnabled=true
 #    start btwlancoex
     write /sys/class/bluetooth/hci0/idle_timeout 7000
+    
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all fstab.qcom
 
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /system/vendor/bin/qmuxd
