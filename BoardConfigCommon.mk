@@ -99,6 +99,8 @@ WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 # NFC
 BOARD_NFC_CHIPSET := pn547
 BOARD_NFC_DEVICE := /dev/pn547
+BOARD_NFC_HAL_SUFFIX := pn54x.default
+NXP_CHIP_TYPE := 1
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
