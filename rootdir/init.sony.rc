@@ -11,7 +11,7 @@ on fs
     symlink /idd /mnt/idd
     restorecon_recursive   /idd
 
-on-post-fs-data
+on post-fs-data
     mkdir /idd/lost+found 0770 root root
     mkdir /idd/output 0755 oem_5987 oem_5987
     mkdir /idd/socket 0711 oem_5987 oem_5987
