@@ -41,7 +41,7 @@ ro.qti.sensors.wu=false
 persist.bt.enableAptXHD=true
 
 # BT rfkill
-ro.rfkilldisabled=1
+ro.rfkilldisabled.uim=1
 
 # Assertive Display
 ro.qcom.ad=1
