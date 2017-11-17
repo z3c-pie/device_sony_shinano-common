@@ -64,7 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
+    $(COMMON_PATH)/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml
 
 PRODUCT_PACKAGES += \
     tfa9890_amp
@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
 
 # Sensor file
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/init.qcom-sensor.sh:system/etc/init.qcom-sensor.sh
+    $(COMMON_PATH)/rootdir/system/etc/init.qcom-sensor.sh:system/vendor/etc/init.qcom-sensor.sh
 
 # BCM Wifi
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
