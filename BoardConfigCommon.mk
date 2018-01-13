@@ -93,6 +93,9 @@ TARGET_SYSTEM_PROP += device/sony/shinano-common/system.prop
 #Sensors
 USE_SENSOR_MULTI_HAL := true
 
+# KCAL
+SUPPORTS_KCAL_COLORCONTROL := true
+
 # Wifi
 BOARD_WLAN_DEVICE           := bcmdhd
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
