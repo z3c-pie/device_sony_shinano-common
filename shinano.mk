@@ -105,6 +105,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     e2fsck
 
+#ANC
+PRODUCT_PACKAGES += \
+   ANCQuickSettings
+
 # FM
 PRODUCT_PACKAGES += \
    FMRadio \
