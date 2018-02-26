@@ -54,6 +54,7 @@ persist.audio.fluence.voicerec=false
 persist.audio.fluence.audiorec=true
 persist.audio.fluence.speaker=true
 persist.audio.handset.mic.type=analog
+persist.audio.anc.enabled=true
 
 # Secure discard
 ro.lockscreen.secdiscard=false
