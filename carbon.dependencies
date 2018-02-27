@@ -12,5 +12,11 @@
     "repository": "omnirom/android_hardware_broadcom_fm",
     "target_path": "hardware/broadcom/fm",
     "revision": "android-8.1"
+  }, 
+  {
+	"remote": "gh",
+    "repository": "rcstar6696/packages_apps_ancquicksettings",
+    "target_path": "packages/apps/ANCQuickSettings",
+    "revision": "cr-6.1"
   }
 ]
