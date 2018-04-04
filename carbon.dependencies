@@ -12,6 +12,12 @@
     "repository": "omnirom/android_hardware_broadcom_fm",
     "target_path": "hardware/broadcom/fm",
     "revision": "android-8.1"
+  },
+  {
+    "remote": "gh",
+    "repository": "omnirom/android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep",
+    "revision": "android-8.1"
   }, 
   {
 	"remote": "gh",
