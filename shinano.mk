@@ -137,9 +137,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NfcNci \
     com.android.nfc_extras \
-    nfc_nci.pn54x.default
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.hardware.nfc_nci=pn54x.default    
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.hardware.nfc_nci=pn54x.default
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/nfcee_access.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfcee_access.xml \
