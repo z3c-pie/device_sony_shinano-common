@@ -17,7 +17,7 @@
     "remote": "gh",
     "repository": "omnirom/android_hardware_sony_timekeep",
     "target_path": "hardware/sony/timekeep",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   }, 
   {
 	"remote": "gh",
