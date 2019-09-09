@@ -81,8 +81,10 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-    $(COMMON_PATH)/sepolicy
+# BOARD_SEPOLICY_DIRS += \
+#     $(COMMON_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
+
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
