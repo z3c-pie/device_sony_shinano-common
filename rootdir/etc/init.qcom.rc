@@ -37,7 +37,6 @@ on init
     # for backwards compatibility
     symlink /sdcard /storage/sdcard0
 
-    mkdir /tmp
     mount tmpfs tmpfs /tmp nosuid mode=0755,uid=0,gid=0
     chmod 0664 /proc/rdtag
     chown root system /proc/rdtag
@@ -75,11 +74,6 @@ on init
 
 on fs
     mount_all ./vendor/etc/fstab.qcom
-    mkdir /lta-label 0555 system system
-    wait /dev/block/platform/msm_sdcc.1/by-name/LTALabel
-    mount ext4 /dev/block/platform/msm_sdcc.1/by-name/LTALabel /lta-label nosuid nodev noatime noexec ro barrier=0
-    chown system system /lta-label
-    chmod 0555 /lta-label
 
     # Mount ZRAM
     swapon_all ./vendor/etc/fstab.qcom
@@ -87,8 +81,6 @@ on fs
     # Adaptive LMK
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
-
-    symlink /sdcard /storage/sdcard0
 
     # Start hvdcp to enable quck charge 2.0 in power off charge
     start hvdcp
