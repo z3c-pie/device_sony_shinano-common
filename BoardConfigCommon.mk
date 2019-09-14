@@ -18,6 +18,8 @@ include device/sony/msm8974-common/BoardConfigCommon.mk
 
 COMMON_PATH := device/sony/shinano-common
 
+BUILD_BROKEN_DUP_RULES := true
+
 TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 
 # Platform

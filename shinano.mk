@@ -125,6 +125,8 @@ include $(COMMON_PATH)/system_prop.mk
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    bloggy.sh \
+    loggy.sh \
     fstab.qcom \
     init.camera.rc \
     init.qcom.power.rc \
