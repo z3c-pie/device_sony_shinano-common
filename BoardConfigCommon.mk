@@ -96,10 +96,6 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
-# Shims
-TARGET_LD_SHIM_LIBS += \
-    /system/lib/libsomc_chokoballpal.so|/vendor/lib/libshim_camera.so
-
 # Wifi
 BOARD_WLAN_DEVICE := bcmdhd
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
