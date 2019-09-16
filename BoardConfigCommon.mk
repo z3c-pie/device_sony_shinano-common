@@ -68,7 +68,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAVE_BCM_FM := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_shinano
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_shinano
 
 # Partition information
 BOARD_BOOTIMAGE_PARTITION_SIZE := 20971520
