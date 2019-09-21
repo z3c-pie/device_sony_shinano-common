@@ -89,11 +89,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
     android.hardware.nfc@1.0-service \
+    com.android.nfc_extras \
     NfcNci \
-    com.android.nfc_extras
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.hardware.nfc_nci=pn54x.default
+    nfc_nci.msm8974
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/nfc/nfcee_access.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfcee_access.xml \
