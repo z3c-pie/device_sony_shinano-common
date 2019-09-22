@@ -371,7 +371,6 @@ on post-fs-data
     mkdir /cache/pc 0770 radio system
 
     setprop vold.post_fs_data_done 1
-    setprop vold.decrypt trigger_restart_framework
 
 on property:bluetooth.isEnabled=true
 #    start btwlancoex
