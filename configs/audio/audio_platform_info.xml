@@ -36,9 +36,7 @@
 
         <!-- Input devices -->
         <device name="SND_DEVICE_IN_HANDSET_DMIC" acdb_id="6" />
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC" acdb_id="11" />
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="6" />
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="11" />
         <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" acdb_id="6" />
         <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="282" />
         <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="544" />
@@ -60,11 +58,9 @@
 
     <device_names>
         <!-- Output devices -->
-        <device name="SND_DEVICE_OUT_HEADPHONES" alias="headphones-regulation" />
         <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" alias="voice-handset-hac" />
 
-      <!-- Input devices -->
-        <device name="SND_DEVICE_IN_BT_SCO_MIC" alias="bt-sco-dsp-mic" />
+        <!-- Input devices -->
         <device name="SND_DEVICE_IN_HDMI_MIC" alias="hdmi-tx" />
     </device_names>
 </audio_platform_info>
